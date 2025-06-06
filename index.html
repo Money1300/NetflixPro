@@ -123,6 +123,7 @@
       <a href="#accueil">🏠 Accueil</a>
       <a href="#taches">📝 Tâches</a>
       <a href="#solde">💰 Solde</a>
+      <a href="#connection"> connexion</a>
     </nav>
   </header>
 
@@ -163,7 +164,28 @@
       <p style="margin-top:15px; color: #ccc;">⚠️ Maximum : 10 tâches par jour. Intervalle minimum : 2 minutes entre chaque tâche.</p>
     </div>
   </section>
+  <section>
+    <div class="form-container">
+    <h2>Créer un compte</h2>
+    <form onsubmit="handleRegister(event)">
+      <input type="text" placeholder="Nom d'utilisateur" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Mot de passe" required>
+      <button type="submit">S'inscrire</button>
+      <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+    </form>
+  </div>
 
+  <script>
+    function handleRegister(e) {
+      e.preventDefault();
+      // Logique à remplacer par une requête PHP/JS plus tard
+      window.location.href = "index.html"; // Redirection vers la page principale
+    }
+  </script>
+</body>
+</html>
+  </section>
   <section id="solde">
     <div class="card">
       <h2>💰 Solde actuel</h2>
